@@ -33,7 +33,7 @@ const crearGaleria = () => {
         imagen.classList.add('galeria__img');
 
      
-        imagen.onclick = () => {
+        link.onclick = () => {
             console.log(`Diste click en la imagen: ${i}`);
             mostrarImagen();
             
