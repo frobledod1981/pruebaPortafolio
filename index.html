@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Fernando Robledo</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Profe puse el link de Bootstrap pero me modifica los estilos css de las fuentes asi que lo dejo comentado -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+<!-- header -->
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <nav class="navegacion">
+                    <div>
+                        <a class="navegacion__enlace" href="#quienSoy">Quien soy</a>
+                    <a class="navegacion__enlace" href="#galerias">Galeria</a>
+                    <a class="navegacion__enlace" href="#stack">Stack</a>
+                    <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                    </div>
+                    <img class="dark-mode-boton" src="assets/img/dark-mode.svg" alt="">
+                </nav>
+            </div><!--.header-barra-->
+
+            <div class="modelo">
+                <h1 class="modelo__nombre">Software Developer</h1>
+                <p class="modelo__descripcion">Ayudamos a las Personas a dar Solucion a problematicas relacionadas con servicios informaticos entregando
+                     la Maxima calidad en el Desarrollo de Sofware.</p>
+            </div>
+        </div>
+
+        <img class="header__guitarra" src="./assets/img/code2.png" alt="imagen header code">
+    </header>
+
+    <main class="main contenedor">
+
+        <!-- acerca de -->
+        <section id="quienSoy" class="acerca">
+            <div class="acerca__foto">
+                <img class="acerca__imagen" src="assets/img/foto.jpeg" width="180" height="180" alt="fernando robledo">
+            </div>
+        
+            <div class="acerca__texto">
+                <h3 class="acerca__titulo">Quien Soy</h3>
+                <p>Hola mi nombre es Fernando Robledo soy Desarrollador de Software Full-Stack con Experiencia en Java-Spring,PHP con Laravel, C# Asp NEt Core 6 en Back-End<br> 
+                    En Front-End conocimientos de Javascript,Angular,React y librerias como  bootstrap + sass y tailwind, Desarrollando con Workflow Gulp, He realizado proyectos exitosos 
+                    tales como sistemas Bibliotecarios, sistemas de Ferretería y Control de Inventarios aplicando Bases de Datos Relacionales como Mysql,Sql Server y NoSQL
+                    con Mongo DB,e realizado Sistemas de Versionados en Git + Github dónde reciden dichos Proyectos estos sistemas son de carácter principalmente orientado a Web y Empresas, ademas se aplicar mMtodologias Agiles como Scrum y XP.
+                    <br><span class="acerca__tm">Fernando Robledo TM™</span></p>
+            </div>
+        </section>
+
+        <h2 class="titulo__galeria">Galeria de Trabajos</h2>
+        <section id="galerias" class="galeria">
+          
+        </section>
+
+        <section id="modal">
+            <!--
+           <div class="modal" id="showImg1">
+                        <div class="modal__container">
+                          <a href="#" class="modal__close">X</a>
+                        <img src="assets/img/1.jpg" class="modal__img">
+ 
+                     <div class="modal__texts">
+                        <h2 class="modal__title">Front End Store</h2>
+                        <p class="modal__paragraph">Pagina Dedicada a la venta de Poleras con diseños de Logos de Tecnolgias Web del FRONT-END</p>
+                        <a href="https://market-dev-prueba.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                     </div>
+               </div>
+             </div>
+ 
+             <div class="modal" id="showImg2">
+                       <div class="modal__container">
+                            <a href="#" class="modal__close">X</a>
+                        <img src="assets/img/2.jpg" class="modal__img">
+ 
+                        <div class="modal__texts">
+                            <h2 class="modal__title">Blog de Cafe</h2>
+                            <p class="modal__paragraph">Blog dedicado a cursos y recetas de cafe</p>
+                            <a href="https://blog-cafe-pruebas.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                        </div>
+                     </div>
+              </div>
+ 
+              <div class="modal" id="showImg3">
+                      <div class="modal__container">
+                            <a href="#" class="modal__close">X</a>
+                        <img src="assets/img/3.jpg" class="modal__img">
+ 
+                        <div class="modal__texts">
+                            <h2 class="modal__title">Diseño Y Desarrollo web Freelancer</h2>
+                            <p class="modal__paragraph">Sitio FreeLancer</p>
+                            <a href="https://freelancer-fernando.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                        </div>
+                     </div>
+               </div>
+ 
+               <div class="modal" id="showImg4">
+                   <div class="modal__container">
+                        <a href="#" class="modal__close">X</a>
+                        <img src="assets/img/4.jpg" class="modal__img">
+ 
+                       <div class="modal__texts">
+                           <h2 class="modal__title">Techno & Festival de Musica </h2>
+                           <p class="modal__paragraph">Sitio que muestra sobre festival de musica Techno que se realizara en santiago</p>
+                           <a href="https://festival-musica-tech.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                       </div>
+                   </div>
+             </div>
+ 
+             <div class="modal" id="showImg5">
+                 <div class="modal__container">
+                      <a href="#" class="modal__close">X</a>
+                      <img src="assets/img/5.jpg" class="modal__img">
+ 
+                     <div class="modal__texts">
+                         <h2 class="modal__title">Nucleus</h2>
+                         <p class="modal__paragraph">Sitio que muestra una aplicacion que promueve el pago seguro ,mediante aplicacion Nucleus</p>
+                         <a href="https://pagos-mov.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="modal" id="showImg6">
+                 <div class="modal__container">
+                      <a href="#" class="modal__close">X</a>
+                      <img src="assets/img/6.jpg" class="modal__img">
+ 
+                     <div class="modal__texts">
+                         <h2 class="modal__title">Tu casa en el Bosque</h2>
+                         <p class="modal__paragraph">Sitio de venta de casas en modelos rusticos en el bosque</p>
+                         <a href="https://sitearquitecturas.netlify.app/"  class="modal__cta">Entra Aquí</a>
+                     </div>
+              </div>
+           </div>
+ -->
+            </section>
+
+            <!-- stack -->
+            <section id="stack" class="languages container">
+                    <h2 class="languages__titulo">Stack</h2>
+                    <div class="languages__container">
+                        <img class="languages__pictures" src="assets/img/html-5.svg" alt="html5">
+                        <img class="languages__pictures" src="assets/img/css-3.svg" alt="css3">
+                        <img class="languages__pictures" src="assets/img/javascript.svg" alt="js">
+                        <img class="languages__pictures" src="assets/img/react.svg" alt="react">
+                        <img class="languages__pictures" src="assets/img/angular.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/sass.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/gulp.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/java.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/spring.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/php.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/laravel.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/c.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/net.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/mysql.svg" alt="angular">
+                        <img class="languages__pictures" src="assets/img/mongo.svg" alt="angular">
+                    </div>
+           </section>
+
+           <section id="contacto" class=" form contacto container">
+                	<h3 class="contacto__titulo">Contacto</h3>
+				<form class="formulario" action="">
+					<input type="text" placeholder="Nombre" name="nombre" required>
+					<input type="email" placeholder="Correo" name="correo" required>
+					<input type="date" placeholder="Fecha" name="fecha" required>
+					<input type="time" placeholder="Hora" name="hora" required>
+                    <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+					<input class="boton" type="submit" value="Enviar">
+				</form>
+           </section>
+         
+		</main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__contenedor footer__contenido">
+                <nav class="navegacion footer__nav">
+                    <a class="footer__enlace" href="#quienSoy">Quien Soy</a>
+                    <a class="footer__enlace" href="#galeria">Galeria</a>
+                    <a class="footer__enlace" href="#stack">Stack</a>
+                    <a class="footer__enlace" href="#contacto">Contacto</a>
+                </nav>
+                   <p class="footer__copyright">Todos los <span class="footer__reservado">Derechos Reservados </span>2024 &copy;</span></p>
+                </div>
+
+                <div class="footer__rs">
+                    <a class="foo__twitter" href="http://www.twitter.com/frobledod1981"><i class="fa fa-twitter"></i></a>
+                    <a class="foo__facebook" href="#"><i class="fa fa-facebook"></i></a>
+                    <a class="foo__youtube" href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a class="foo_github" href="http://www.github.com/frobledod1981"><i class="fa fa-github"></i></a>
+                    <a class="foo__instagram" href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+        </footer>
+    
+
+    <script src="https://kit.fontawesome.com/092fc41279.js" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
